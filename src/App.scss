@@ -1,0 +1,43 @@
+$primary-color: yellow;
+
+@import "animate.css";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+input,
+textarea {
+  font-family: "Helvetica-Neue";
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#particles-container {
+  width: 100%;
+  height: 100%;
+}

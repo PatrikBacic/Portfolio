@@ -1,0 +1,145 @@
+.about-container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10%;
+    
+    .map-wrap {
+        width: 40%;
+    }
+    
+    
+    .leaflet-container {
+        height: 100%;
+        width: 100%;
+        border: 2px solid lightskyblue;
+        box-shadow: 12px 12px rgba($color: #727171, $alpha: 0.1);
+    }
+
+    .txt-zone {
+        margin-left: 4.5%;
+        padding-right: 5%;
+        width: 40%;
+        
+        a {
+            color: black;
+            transition: 0.3s ease-out;
+            font-weight: bolder;
+            text-shadow: 0.5px 0.5px lightskyblue;
+            
+        
+            &:hover {
+                color: lightskyblue;
+                text-shadow: 1px 1px black;
+        
+            }
+        }
+    
+        .p-container {
+            font-size: 22px;
+            text-align: justify;
+            font-family: "Helvetica";
+        }
+    
+        .lang {
+            color: black;
+            text-shadow: 0.5px 0.5px lightskyblue;
+        }
+    }
+}
+
+
+.about-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Coolvetica";
+    transition: 0.3s ease-out;
+    text-shadow: 2px 3px lightgray;
+    width: 40%;
+    
+
+    &:hover {
+        transform: scale(1.2);
+        color: lightskyblue;
+    }
+}
+.popup-container .leaflet-popup-content-wrapper {
+    width: 250px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+@media screen and (max-width: 500px) {
+    .about-container {
+        display: block;
+
+        .about-title {
+            text-align: center;
+            display: inline-block;
+            width: auto;
+            font-size: 50px;
+            font-family: "Coolvetica";
+            transition: 0.3s ease-out;
+            text-shadow: 2px 3px lightgray;
+            width: 100%;
+        
+            &:hover {
+                transform: scale(1.2);
+                color: lightskyblue;
+            }
+        }
+    
+        
+        .map-wrap {
+            width: 60vw;
+            height: 25vh;
+            margin-left: 20%;
+            margin-right: 20%;
+            
+        }
+        
+        .txt-zone {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+            
+            
+            a {
+                color: black;
+                transition: 0.3s ease-out;
+                font-weight: bolder;
+                text-shadow: 0.5px 0.5px lightskyblue;
+                
+            
+                &:hover {
+                    color: lightskyblue;
+                    text-shadow: 1px 1px black;
+            
+                }
+            }
+        
+            .p-container {
+                font-size: 22px;
+                text-align: center;
+                font-family: "Helvetica";
+            }
+        
+            .lang {
+                color: black;
+                text-shadow: 0.5px 0.5px lightskyblue;
+            }
+        }
+    
+    }
+
+    .popup-container .leaflet-popup-content-wrapper {
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+      }
+
+}
+
+
+

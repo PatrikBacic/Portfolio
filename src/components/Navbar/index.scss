@@ -1,0 +1,290 @@
+.nav-bar {
+    background-color: #181818;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0 auto;
+            
+        .navTitle {
+            color: lightgray;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease-out;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+            &:hover {
+                color: lightskyblue;
+                transform: scale(1.1);
+            }
+        }
+            
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+
+            a.active {
+                color: lightskyblue;
+            }
+            
+            a {
+                color: lightgray;
+                margin: 0 20px;
+                font-size: 25px;
+                text-decoration: none;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                transition: 0.3s ease-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: lightskyblue;
+                }
+            }
+        }
+        .ul-links {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            
+            li {
+                text-decoration: none;
+                font-size: 25px;
+                margin: 0 20px;
+                transition: 0.3s ease-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                a {
+                    color: lightgray;
+
+                    &:hover {
+                        color: lightskyblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-links {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .nav-links a{
+        display: none;
+    }
+
+    // .navbar-toggle {
+    //     display: block;
+    //     width: 30px;
+    //     height: 30px;
+    //     position: relative;
+    //     z-index: 1;
+    // }
+
+    // .navbar-toggle .navbar-icon {
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 2px;
+    //     background-color: lightgray;
+    //     border-radius: 2px;
+    //     transition: all 0.3s ease-in-out;
+    // }
+
+
+    // .navbar-toggle .navbar-icon:before,
+    // .navbar-toggle .navbar-icon:after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 2px;
+    //     background-color: lightgray;
+    //     border-radius: 2px;
+    //     transition: all 0.3s ease-in-out;
+    // }
+
+    // .navbar-toggle .navbar-icon:before {
+    //     top: -8px;
+    // }
+
+    // .navbar-toggle .navbar-icon:after {
+    //     bottom: -8px;
+    // }
+
+    // .navbar-nav {
+    //     position: absolute;
+    //     top: 70px;
+    //     left: 0;
+    //     right: 0;
+    //     width: auto;
+    //     background-color: #181818;
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     overflow: hidden;
+    //     max-height: 0;
+    //     transition: max-height 0.3s ease-in-out;
+
+    // }
+
+    // .navbar-nav-open {
+    //     max-height: 50px;
+        
+    // }
+    // .navbar-nav-open a.active {
+    //     color: lightskyblue;
+    // }
+    
+    // .navbar-nav li {
+    //     margin-top: 0;
+    //     list-style-type: none;
+    //     font-size: 20px;
+    //     margin: 0 10px;
+    //     padding-bottom: 10px;
+    // }
+
+    // .navbar-nav li a {
+    //     text-decoration: none;
+    //     font-family: "Coolvetica";
+    //     color: lightgray;
+
+    //     &.active {
+    //         color: lightskyblue;
+    //     }
+    // }
+
+    // burger new
+    .burger-menu {
+        height: 30%;
+        width: 3.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .burger-bar {
+        width: 3.5em;
+        height: 0.2em;
+        background-color: lightgray;
+        border-radius: 0.2em;
+    }
+
+    .menu {
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #181818;
+        position: absolute;
+        top: 70px;
+        transition: height 0.2s ease-in-out;
+    }
+
+    .hidden {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .visible {
+        height: 50px;
+    }
+
+    .burger-links {
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .burger-links li {
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    .burger-links li a {
+        text-decoration: none;
+        font-family: "Coolvetica";
+        color: lightgray;
+
+        &.active {
+            color: lightskyblue;
+        }
+    }
+
+    // animations clicked
+    .burger-bar.clicked:nth-child(1) {
+        transform: rotate(45deg) translate(0.6em, 0.5em);
+        transition: ease-out 0.2s;
+    }
+
+    .burger-bar.clicked:nth-child(2) {
+        transform: scale(0.1);
+        transition: ease-out 0.2s;
+    }
+
+    .burger-bar.clicked:nth-child(3) {
+        transform: rotate(-45deg) translate(1em, -1em);
+        transition: ease-out 0.2s;
+    }
+
+    // animations unclicked
+    .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
+    }
+
+
+}
+
+
+
+
+
+
+    
+
+
+
+
+

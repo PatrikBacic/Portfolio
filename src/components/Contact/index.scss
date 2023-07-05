@@ -1,0 +1,142 @@
+.contact-form {
+    width: 100%;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 20px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+    }
+
+    input[type = "text"],
+    input[type = "email"] {
+        width: 20%;
+        border-radius: 10px;
+        border: 2px solid lightskyblue;
+        height: 40px;
+        background-color: lightgray;
+        font-size: 22px;
+        font-family: "Helvetica";
+    }
+
+    textarea {
+        width: 20%;
+        border-radius: 10px;
+        border: 2px solid lightskyblue;
+        background: lightgray;
+        height: 250px;
+        box-sizing: border-box;
+        resize: vertical;
+        max-height: 300px;
+        font-size: 22px;
+        font-family: "Helvetica";
+    }
+
+    .submit-btn {
+        border-radius: 10px;
+        border: 2px solid lightskyblue;
+        width: 20%;
+        height: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        transition: 0.3s ease-out;
+        font-family: "Coolvetica";
+        margin-bottom: 5%;
+
+        &:hover {
+            background-color: lightskyblue;
+        }
+    }
+}
+
+.text-zone {
+    text-align: center;
+    
+    .contact {
+        font-family: "Coolvetica";
+        text-shadow: 2px 3px silver;
+        font-size: 50px;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 0 10px;
+        text-align: center;
+        transition: 0.3s ease-out;
+        &:hover {
+            transform: scale(1.2);
+            color: lightskyblue;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-contact-page {
+        overflow-x: hidden;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        
+        .contact-form {
+            margin-top: 5%;
+        
+        
+            ul {
+                padding: 0;
+                margin: 0;
+                
+        
+                li {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    margin-bottom: 20px;
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+                }
+            }
+        
+            input[type = "text"],
+            input[type = "email"] {
+                width: 50%;
+                border-radius: 10px;
+                border: 2px solid lightskyblue;
+                height: 40px;
+                background-color: lightgray;
+            }
+        
+            textarea {
+                width: 50%;
+                border-radius: 10px;
+                border: 2px solid lightskyblue;
+                background: lightgray;
+                height: 250px;
+                box-sizing: border-box;
+                resize: vertical;
+                max-height: 300px;
+            }
+        
+            .submit-btn {
+                border-radius: 10px;
+                border: 2px solid lightskyblue;
+                width: 50%;
+                font-weight: bold;
+                transition: 0.3s ease-out;
+                font-family: "Coolvetica";
+        
+                &:hover {
+                    background-color: lightskyblue;
+                }
+            }
+        }
+    }
+    
+}

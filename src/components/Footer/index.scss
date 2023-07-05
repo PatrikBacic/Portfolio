@@ -1,0 +1,34 @@
+.footer {
+    background: linear-gradient(lightskyblue, whitesmoke);
+    color: #444;
+    text-align: center;
+    margin-top: auto;
+    min-height: 5%;
+    width: 100%;
+    padding: 10px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+      }
+    
+    .footer {
+        background-color: lightskyblue;
+        color: #444;
+        bottom: 0;
+        padding: 10px;
+        text-align: center;
+    
+        p {
+            font-size: 20px;
+        }
+    }
+}

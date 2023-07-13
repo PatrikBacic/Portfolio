@@ -19,33 +19,38 @@
 
     input[type = "text"],
     input[type = "email"] {
-        width: 20%;
+        width: 18%;
         border-radius: 10px;
         border: 2px solid lightskyblue;
+        box-sizing: border-box;
         height: 40px;
         background-color: lightgray;
         font-size: 22px;
         font-family: "Helvetica";
+        padding-left: 0.3%;
     }
 
     textarea {
-        width: 20%;
+        width: 18%;
         border-radius: 10px;
         border: 2px solid lightskyblue;
         background: lightgray;
-        height: 250px;
+        height: 200px;
         box-sizing: border-box;
         resize: vertical;
         max-height: 300px;
         font-size: 22px;
         font-family: "Helvetica";
+        padding-left: 0.3%;
+        
     }
 
     .submit-btn {
         border-radius: 10px;
         border: 2px solid lightskyblue;
-        width: 20%;
+        width: 18%;
         height: 30px;
+        box-sizing: border-box;
         font-size: 22px;
         font-weight: bold;
         transition: 0.3s ease-out;
@@ -109,8 +114,10 @@
                 width: 50%;
                 border-radius: 10px;
                 border: 2px solid lightskyblue;
+                box-sizing: border-box;
                 height: 40px;
                 background-color: lightgray;
+                padding-left: 1.5%;
             }
         
             textarea {
@@ -122,6 +129,7 @@
                 box-sizing: border-box;
                 resize: vertical;
                 max-height: 300px;
+                padding-left: 1.5%;
             }
         
             .submit-btn {
